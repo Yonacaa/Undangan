@@ -1,0 +1,275 @@
+/* @import url('/styles/bootstrap.min.css'); */
+@import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Cormorant+Upright:wght@300;400;500;600;700&family=Noto+Sans:wght@100..900&display=swap');
+
+:root {
+  --bg-cream: rgba(254, 250, 224, 1);
+  --text-color: #8a6a00;
+}
+
+body {
+  color: var(--text-color);
+  background-image: url('/assets/paper-1468883_tile_v2.webp');
+  background-repeat: repeat;
+  background-size: 100vw;
+}
+
+#main-content {
+  background-image: url('/assets/paper-1468883_tile_v2.webp');
+  background-repeat: repeat;
+  background-size: 100vw;
+}
+
+a {
+  color: #9c8420;
+}
+
+.birthstone-bounce-regular {
+  font-family: 'Birthstone Bounce', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.birthstone-bounce-medium {
+  font-family: 'Birthstone Bounce', serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cormorant-upright-light {
+  font-family: 'Cormorant Upright', serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cormorant-upright-regular {
+  font-family: 'Cormorant Upright', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-upright-medium {
+  font-family: 'Cormorant Upright', serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cormorant-upright-semibold {
+  font-family: 'Cormorant Upright', serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cormorant-upright-bold {
+  font-family: 'Cormorant Upright', serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.noto-sans-semibold {
+  font-family: 'Noto Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+.noto-sans-bold {
+  font-family: 'Noto Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+.my-8 {
+  margin-top: 8rem !important;
+  margin-bottom: 8rem !important;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+.fs-name {
+  font-size: 4.5rem;
+}
+
+.fs-name-1 {
+  font-size: calc(2.6rem + 0.4vw);
+}
+
+.name-container-2 {
+  margin-top: -1.3rem;
+  margin-bottom: -1.5rem;
+}
+
+#dekor-atas {
+  transform-origin: right top;
+}
+
+#dekor-bawah {
+  transform-origin: left bottom;
+}
+
+.dekor {
+  fill: #fff;
+  opacity: 60%;
+}
+
+#penutup {
+  min-width: 30ch;
+}
+
+.putra-putri {
+  width: 50ch;
+}
+
+@media only screen and (min-width: 768px) {
+  .dekor {
+    width: 30% !important;
+  }
+  .w-md-75 {
+    width: 75% !important;
+  }
+  .w-md-50 {
+    width: 50% !important;
+  }
+  .putra-putri {
+    width: fit-content;
+  }
+
+  .name-container-2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* .pembukaan {
+    max-width: 75%;
+  } */
+}
+
+@media only screen and (min-width: 1024px) {
+  .fs-name-1 {
+    font-size: 5rem;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes mekar-bawah {
+  from {
+    opacity: 0;
+    transform: translateY(300px), translateX(-300px);
+  }
+  to {
+    opacity: 0.3;
+    transform: translateY(0px), translateX(0px);
+  }
+}
+
+@keyframes opening-screen-disappear {
+  from {
+    opacity: 1;
+    scale: 1;
+  }
+  to {
+    opacity: 0;
+    scale: 5;
+  }
+}
+
+.fade-in-active {
+  animation: appear ease-in-out;
+  animation-duration: 2s;
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.opening-screen-disappear {
+  animation: opening-screen-disappear ease-in-out;
+  animation-duration: 1.5s;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+
+#music-player {
+  background-image: url('/assets/metatah_icon.png');
+  background-size: contain;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+#music-player-icon {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.play-pause-icon {
+  fill: rgba(254, 250, 224);
+}
+
+button {
+  border: none;
+}
+
+.dekor-jepun {
+  fill: var(--text-color);
+}
+/* #path48 {
+    fill: #cbb000;
+} */
+
+#buka-undangan {
+  cursor: pointer;
+  bottom: 1rem;
+  color: var(--bg-cream);
+  background-color: #8a6a00;
+}
+
+#opening-content {
+  background-color: #513f02;
+  height: 100vh;
+  height: 100svh;
+  width: 100vw;
+  width: 100svw;
+}
+
+#opening-content > div {
+  background-image: url('/assets/paper-1468883_tile_v2.webp');
+  background-repeat: repeat;
+  background-size: 100vw;
+}
+
+#opening-card {
+  width: 90%;
+  /* top: -10%; */
+  box-shadow: 0px 0px 15px var(--bg-cream);
+}
+
+#dekor-jepun-opening {
+  height: calc(1rem + 0.5vw);
+}
+
+@media only screen and (max-width: 767px) {
+  .fs-name {
+    font-size: 1.7rem;
+  }
+}
