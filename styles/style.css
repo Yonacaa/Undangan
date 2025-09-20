@@ -289,3 +289,16 @@ button {
   border-radius: 50%; /* Membuat gambar bulat */
   object-fit: cover;   /* Agar gambar tidak gepeng */
 }
+
+@media (max-width: 576px) {
+  #opening-card-logo {
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 56px;
+    height: 56px;
+  }
+  #opening-card {
+    padding-top: 64px;   /* Ruang atas lebih kecil di HP */
+    padding-right: 12px;
+  }
+}
