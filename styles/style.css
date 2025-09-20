@@ -278,3 +278,14 @@ button {
     display-flex: Center;
   }
 }
+
+#opening-card-logo {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  border-radius: 50%; /* Membuat gambar bulat */
+  object-fit: cover;   /* Agar gambar tidak gepeng */
+}
